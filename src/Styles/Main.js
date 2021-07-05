@@ -112,6 +112,42 @@ export const SeccionQueHacemos = styled.section`
   & .separador {
     border-right: solid;
     border-width: 3px;
-     border-color: orange;
+    border-color: orange;
+    min-height: 140px;
+    padding: 1rem;
+  }
+
+  & .separadorsin {
+    min-height: 140px;
+    padding: 1rem;
+  }
+`;
+
+export const SeccionNuestrosProgramas = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 420px;
+  background-color: #333472;
+  color: #fff;
+
+  & .textoprograma {
+    color: #73c3b3;
+  }
+  & .imglogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    text-align: center;
+  }
+  & .tituloPrograma {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 180px;
+    text-align: left;
   }
 `;

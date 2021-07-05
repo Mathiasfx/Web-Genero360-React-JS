@@ -4,6 +4,7 @@ import IntroGenero from "./components/IntroGenero";
 import NuestroProposito from "./components/NuestroProposito";
 import NuestroObjetivo from "./components/NuestroObjetivo";
 import QueHacemos from "./components/QueHacemos";
+import NuestrosProgramas from "./components/NuestrosProgramas";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <NuestroProposito />
       <NuestroObjetivo />
       <QueHacemos />
+      <NuestrosProgramas />
     </div>
   );
 }
