@@ -8,14 +8,14 @@ const NuestroProposito = () => {
     <SectionNuestroProposito>
       <div className="container">
         <div className="row">
-          <div class="col-md-4 col-sm-12 d-flex align-items-center letra">
+          <div className="col-md-4 col-sm-12 d-flex align-items-center letra">
             <img
               src={Letras}
               alt="Nuestro Proposito Fundacion Genero 360"
               width="240px"
             />
           </div>
-          <div class="col-md-4 col-sm-12 d-flex align-items-center">
+          <div className="col-md-4 col-sm-12 d-flex align-items-center">
             <p>
               Nuestro propósito es fortalecer y desarrollar el liderazgo de
               niñas y adolescentes a través de programas innovadores que
@@ -23,7 +23,7 @@ const NuestroProposito = () => {
               construir una <strong>sociedad más justa y equitativa.</strong>
             </p>
           </div>
-          <div class="col-md-4 col-sm-12 proposito">
+          <div className="col-md-4 col-sm-12 proposito">
             <img src={Corriendo} alt="personas corriendo" />
           </div>
         </div>

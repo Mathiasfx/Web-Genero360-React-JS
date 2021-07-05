@@ -108,4 +108,10 @@ export const SeccionQueHacemos = styled.section`
   justify-content: center;
   align-items: center;
   min-height: 420px;
+
+  & .separador {
+    border-right: solid;
+    border-width: 3px;
+     border-color: orange;
+  }
 `;
