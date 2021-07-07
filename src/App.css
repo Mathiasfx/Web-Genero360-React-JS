@@ -9,3 +9,32 @@ body {
 p {
   font-family: "Questrial", sans-serif;
 }
+
+.btngenero {
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  background-color: #f9a138;
+  color: #fff;
+  box-shadow: 0px 3px 2px 1px #8e3209;
+}
+
+.btngenero::hover {
+  background-color: #8e3209;
+  color: #fff;
+}
+
+.iconbtn {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+  background-color: #ee7332;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}

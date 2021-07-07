@@ -5,6 +5,8 @@ import NuestroProposito from "./components/NuestroProposito";
 import NuestroObjetivo from "./components/NuestroObjetivo";
 import QueHacemos from "./components/QueHacemos";
 import NuestrosProgramas from "./components/NuestrosProgramas";
+import Futbolalapar from "./components/FutbolalaPar";
+import FutbolParDes from "./components/FutbolParDes";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <NuestroObjetivo />
       <QueHacemos />
       <NuestrosProgramas />
+      <Futbolalapar />
+      <FutbolParDes />
     </div>
   );
 }

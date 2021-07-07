@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import FondoGenero from "../images/bg-genero-02.png";
 import Mundo from "../images/mundo.png";
+import Chicas from "../images/chicas.png";
 
 export const MenuContainer = styled.div`
   background-color: #eeeeee;
@@ -150,4 +151,28 @@ export const SeccionNuestrosProgramas = styled.section`
     height: 180px;
     text-align: left;
   }
+`;
+
+export const SeccionFutbolPar = styled.section`
+  display: flex;
+  min-height: 420px;
+  color: #fff;
+  & .bgchicas {
+    width: 100%;
+    background-image: url(${Chicas});
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  & .Flecha {
+    position: relative;
+    top: -30px;
+  }
+`;
+
+export const SeccionFutbolDes = styled.section`
+  margin-top: 40px;
+  display: flex;
+  height: 380px;
+  color: #fff;
+  background-color: #ee7332;
 `;
