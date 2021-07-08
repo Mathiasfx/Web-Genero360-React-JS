@@ -2,6 +2,7 @@ import styled from "styled-components";
 import FondoGenero from "../images/bg-genero-02.png";
 import Mundo from "../images/mundo.png";
 import Chicas from "../images/chicas.png";
+import Ninas from "../images/bgninas-04.png";
 
 export const MenuContainer = styled.div`
   background-color: #eeeeee;
@@ -175,4 +176,46 @@ export const SeccionFutbolDes = styled.section`
   height: 380px;
   color: #fff;
   background-color: #ee7332;
+`;
+
+export const SeccionNinasTect = styled.section`
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background-color: #de3c69;
+  min-height: 840px;
+  color: #fff;
+  & .bgninas {
+    width: 100%;
+    height: 420px;
+    background-image: url(${Ninas});
+    background-repeat: no-repeat;
+    background-position: center 40%;
+  }
+  & .imgninas {
+    position: relative;
+    top: -80px;
+  }
+`;
+
+export const SeccionFrase = styled.section`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 320px;
+  margin-top: 2rem;
+  & .imgfrase {
+    width: 480px;
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 5rem;
+  }
+
+  & .piedefoto {
+    background-color: #73c3b3;
+    height: 8rem;
+  }
 `;

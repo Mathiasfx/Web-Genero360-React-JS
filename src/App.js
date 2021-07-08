@@ -7,6 +7,8 @@ import QueHacemos from "./components/QueHacemos";
 import NuestrosProgramas from "./components/NuestrosProgramas";
 import Futbolalapar from "./components/FutbolalaPar";
 import FutbolParDes from "./components/FutbolParDes";
+import NinasTec from "./components/NinasTec";
+import Frase from "./components/Frase";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <NuestrosProgramas />
       <Futbolalapar />
       <FutbolParDes />
+      <NinasTec />
+      <Frase />
     </div>
   );
 }
