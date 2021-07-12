@@ -4,7 +4,7 @@ import TituloObjetivo from "../images/nuestroobjetivo.png";
 
 const NuestroObjetivo = () => {
   return (
-    <SectionNuestroObjetivo>
+    <SectionNuestroObjetivo id="nuestroobjetivo">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-xs-12"></div>

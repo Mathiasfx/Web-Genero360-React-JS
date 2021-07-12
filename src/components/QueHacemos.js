@@ -9,7 +9,7 @@ import Arrow from "../images/arrowdown.png";
 const QueHacemos = () => {
   return (
     <Fragment>
-      <div className="container">
+      <div className="container" id="quehacemos">
         <div className="row justify-content-center align-items-center flex-column text-center mb-2">
           <img src={QueHacemosimg} alt="Que Hacemos Genero 360" width="280px" />
           <img src={Arrow} alt="Que Hacemos Genero 360" width="100px" />

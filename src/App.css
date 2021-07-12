@@ -38,3 +38,10 @@ p {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+
+.fixed {
+  /* position: fixed;
+  z-index: 5;
+  width: 100%;
+  top: 0; */
+}

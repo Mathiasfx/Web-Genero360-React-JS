@@ -5,7 +5,7 @@ import { SectionNuestroProposito } from "../Styles/Main";
 
 const NuestroProposito = () => {
   return (
-    <SectionNuestroProposito>
+    <SectionNuestroProposito id="proposito">
       <div className="container">
         <div className="row">
           <div className="col-md-4 col-sm-12 d-flex align-items-center letra">

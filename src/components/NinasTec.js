@@ -9,7 +9,7 @@ const NinasTec = () => {
       <div className="bgninas">
         <div className="container">
           <div className="col-md-6 col-sm-12">
-            <img src={LogoNinass} alt="logo ninas Tecnologicas" width="100%" />
+            <img src={LogoNinass} alt="logo ninas Tecnologicas" />
           </div>
           <div className="col-md-6 col-sm-12"></div>
         </div>

@@ -9,6 +9,7 @@ import Futbolalapar from "./components/FutbolalaPar";
 import FutbolParDes from "./components/FutbolParDes";
 import NinasTec from "./components/NinasTec";
 import Frase from "./components/Frase";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <FutbolParDes />
       <NinasTec />
       <Frase />
+      <Footer />
     </div>
   );
 }

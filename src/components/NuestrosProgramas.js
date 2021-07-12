@@ -6,7 +6,7 @@ import TituloNuestro from "../images/nuestrosprogramas.png";
 
 const NuestrosProgramas = () => {
   return (
-    <SeccionNuestrosProgramas>
+    <SeccionNuestrosProgramas id="programa">
       <div className="container">
         <div className="row justify-content-start text-center w-100">
           <div className="col-md-4 col-sm-12  text-left  d-flex flex-column align-items-start justify-content-center">
