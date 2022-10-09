@@ -11,11 +11,13 @@ import NinasTec from "./components/NinasTec";
 import Frase from "./components/Frase";
 import Footer from "./components/Footer";
 import Contacto from "./components/Contacto";
+import PopupComp from "./components/PopupComp";
 
 function App() {
   return (
     <div className="App">
       <Nav />
+      <PopupComp />
       <IntroGenero />
       <NuestroProposito />
       <NuestroObjetivo />

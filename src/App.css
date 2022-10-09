@@ -45,3 +45,8 @@ p {
   width: 100%;
   top: 0; */
 }
+
+.modal2 {
+  display: flex;
+  justify-content: center;
+}
