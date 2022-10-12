@@ -79,6 +79,49 @@ export const MenuElement = styled.ul`
     width: 50%;
     left: 23%;
   }
+
+  & a {
+    text-decoration: none;
+    color: none;
+  }
+`;
+
+export const SectionConcurso = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  min-height: 300px;
+  color: black;
+  text-align: center;
+  text-justify: inter-word;
+  & p {
+    font-size: 1.2rem;
+    padding-right: 1.8rem;
+  }
+  & img {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  @media ${device.mobileL} {
+    align-items: center;
+    justify-content: center;
+    text-align: color-interpolation-filters;
+
+    & img {
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    & p {
+      font-size: 14px;
+    }
+  }
 `;
 
 export const SectionIntroGenero = styled.section`
