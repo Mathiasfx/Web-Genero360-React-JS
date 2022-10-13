@@ -62,3 +62,14 @@ a {
 .link60 a {
   color: #474793 !important;
 }
+.contenedorBotonera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contenedorBotonera p {
+  margin: 0;
+  padding: 0;
+}
