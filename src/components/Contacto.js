@@ -1,3 +1,4 @@
+import React from "react";
 import { SeccionContacto } from "../Styles/Main";
 import emailjs from "emailjs-com";
 

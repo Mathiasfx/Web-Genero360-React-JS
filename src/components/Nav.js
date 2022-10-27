@@ -22,7 +22,85 @@ const Nav = () => {
       }
     };
     window.addEventListener("scroll", handleScroll);
-  }, []);
+    compararURL(url);
+  }, [url]);
+
+  const compararURL = (url) => {
+    if (url !== "/consurso" && url !== "/novedades") {
+      return (
+        <Fragment>
+          <li>
+            <Link
+              onClick={this}
+              to="proposito"
+              spy={true}
+              smooth={true}
+              ignoreCancelEvents={true}
+            >
+              Propósito
+            </Link>
+          </li>
+          <li>
+            <Link onClick={this} to="nuestroobjetivo" spy={true} smooth={true}>
+              Nuestro Objetivo
+            </Link>
+          </li>
+          <li>
+            <Link onClick={this} to="quehacemos" spy={true} smooth={true}>
+              Qué hacemos
+            </Link>
+          </li>
+          <li>
+            <Link onClick={this} to="programa" spy={true} smooth={true}>
+              Programa
+            </Link>
+          </li>
+          <li className="link60">
+            <RouterLink to="/concurso360">Concurso</RouterLink>
+          </li>
+          <li>
+            <Link onClick={this} to="contacto" spy={true} smooth={true}>
+              Contacto
+            </Link>
+          </li>
+
+          <li className="link60">
+            <RouterLink to="/novedades">Novedades</RouterLink>
+          </li>
+        </Fragment>
+      );
+    } else {
+      return (
+        <Fragment>
+          <li className="link60">
+            <RouterLink to="/">Propósito</RouterLink>
+          </li>
+
+          <li className="link60">
+            <RouterLink to="/">Nuestro Objetivo</RouterLink>
+          </li>
+
+          <li className="link60">
+            <RouterLink to="/"> Qué hacemos</RouterLink>
+          </li>
+
+          <li className="link60">
+            <RouterLink to="/"> Programa</RouterLink>
+          </li>
+
+          <li className="link60">
+            <RouterLink to="/concurso360">Concurso</RouterLink>
+          </li>
+          <li className="link60">
+            <RouterLink to="/">Contacto</RouterLink>
+          </li>
+          <li className="link60">
+            <RouterLink>Novedades</RouterLink>
+          </li>
+        </Fragment>
+      );
+    }
+  };
 
   return (
     <MenuContainer className="navbarr">
@@ -32,79 +110,7 @@ const Nav = () => {
             <RouterLink to="/">
               <img src={Logo} alt="Logo Genero 360" width="180px" />
             </RouterLink>
-            <MenuElement>
-              {url != "/concurso360" ? (
-                <Fragment>
-                  <li>
-                    <Link
-                      onClick={this}
-                      to="proposito"
-                      spy={true}
-                      smooth={true}
-                      ignoreCancelEvents={true}
-                    >
-                      Propósito
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      onClick={this}
-                      to="nuestroobjetivo"
-                      spy={true}
-                      smooth={true}
-                    >
-                      Nuestro Objetivo
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      onClick={this}
-                      to="quehacemos"
-                      spy={true}
-                      smooth={true}
-                    >
-                      Qué hacemos
-                    </Link>
-                  </li>
-                  <li>
-                    <Link onClick={this} to="programa" spy={true} smooth={true}>
-                      Programa
-                    </Link>
-                  </li>
-                  <li className="link60">
-                    <RouterLink to="/concurso360">Concurso</RouterLink>
-                  </li>
-                  <li>Novedades</li>
-                  <li>
-                    <Link onClick={this} to="contacto" spy={true} smooth={true}>
-                      Contacto
-                    </Link>
-                  </li>
-                </Fragment>
-              ) : (
-                <Fragment>
-                  <li className="link60">
-                    <RouterLink to="/">Propósito</RouterLink>
-                  </li>
-                  <li className="link60">
-                    <RouterLink to="/"> Nuestro Objetivo</RouterLink>
-                  </li>
-                  <li className="link60">
-                    <RouterLink to="/"> Qué hacemos</RouterLink>
-                  </li>
-                  <li className="link60">
-                    <RouterLink to="/"> Programa</RouterLink>
-                  </li>
-                  <li className="link60">
-                    <RouterLink to="/concurso360"> Concurso</RouterLink>
-                  </li>
-                  <li>Novedades</li>
-                  <li className="link60">
-                    <RouterLink to="/"> Contacto</RouterLink>
-                  </li>
-                </Fragment>
-              )}
-            </MenuElement>
+            <MenuElement>{compararURL(url)}</MenuElement>
           </Menu>
         </div>
       </div>
@@ -113,3 +119,4 @@ const Nav = () => {
 };
 
 export default Nav;
+//
