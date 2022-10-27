@@ -105,6 +105,7 @@ export const SectionConcurso = styled.section`
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
+    max-width: 360px;
   }
 
   @media ${device.mobileL} {
