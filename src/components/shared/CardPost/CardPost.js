@@ -7,8 +7,9 @@ const CardPost = (props) => {
   return (
     <div className="cardPost">
       <img
-        src={`../images/${imagenPrincipal}`}
+        src={`../../../images/${imagenPrincipal}`}
         alt="Novedades Fundacion Genero 360"
+        width="70px"
       />
       <h5>{titulo}</h5>
       <p>{descripcionCorta}....</p>
