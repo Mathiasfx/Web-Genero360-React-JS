@@ -1,22 +1,28 @@
 import React from "react";
 import "./CardPost.css";
+import { Link as RouterLink, useLocation } from "react-router-dom";
 
 const CardPost = (props) => {
-  const { titulo, descripcionCorta, imagenPrincipal, fecha } = props;
+  const { id, titulo, descripcionCorta, imagenPrincipal, fecha } = props;
 
   return (
     <div className="cardPost">
-      <img
-        src={`../../../images/${imagenPrincipal}`}
-        alt="Novedades Fundacion Genero 360"
-        width="70px"
-      />
-      <h5>{titulo}</h5>
+      <div className="contenedorImgTitle">
+        <img
+          className="cardPostImg"
+          src={require(`../../../images/${imagenPrincipal}`)}
+          alt="Novedades Fundacion Genero 360"
+        />
+        <h5>{titulo}</h5>
+      </div>
+
       <p>{descripcionCorta}....</p>
       <p>
         <small>{fecha}</small>
       </p>
-      <button className="btn  btn-360">Ver más</button>
+      <RouterLink to={`/novedades/${id}`}>
+        <button className="btn  btn-360">Ver más</button>
+      </RouterLink>
     </div>
   );
 };
