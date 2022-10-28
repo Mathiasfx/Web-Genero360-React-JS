@@ -1,18 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { SeccionNovedades } from "../Styles/Main";
 import CardPost from "../components/shared/CardPost/CardPost.js";
+import Axios from "axios";
 
 const Novedades = () => {
+  const [novedades, setNovedades] = useState([]);
+
+  useEffect(() => {
+    Axios({
+      url: "https://genero360api.herokuapp.com/api/novedades",
+    })
+      .then((response) => {
+        setNovedades(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, [setNovedades]);
+
   return (
     <div className="container">
       <SeccionNovedades>
-        <CardPost
-          id="6"
-          titulo="Firma de Convenio marco de Cooperación interinstitucional entre la fundacion Genero 360 y el Rotary Club de Luque Paraguay"
-          descripcionCorta="El dia martes se llevo a cabo la firma del convenio marco de cooperacion interinstitucional entre el rotary club Luque, representado por su presidente fany Benitez de giangreco y la fundacion genero 360 representada por su Viceprecidenta Norma Alicia Simonit"
-          fecha="20/10/22"
-          imagenPrincipal="luque360.jpg"
-        ></CardPost>
+        {novedades.map((nov) => (
+          <CardPost
+            id={nov.id}
+            titulo={nov.titulo}
+            descripcionCorta={nov.descripcionCorta}
+            fecha={nov.fecha}
+            imagenPrincipal={nov.imagenPrincipal}
+          ></CardPost>
+        ))}
       </SeccionNovedades>
     </div>
   );
