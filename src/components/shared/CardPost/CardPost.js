@@ -8,11 +8,13 @@ const CardPost = (props) => {
   return (
     <div className="cardPost">
       <div className="contenedorImgTitle">
-        <img
-          className="cardPostImg"
-          src={require(`../../../images/${imagenPrincipal}`)}
-          alt="Novedades Fundacion Genero 360"
-        />
+        {imagenPrincipal ? (
+          <img
+            className="cardPostImg"
+            src={`./images/${imagenPrincipal}`}
+            alt="Novedades Fundacion Genero 360"
+          />
+        ) : null}
         <h5>{titulo}</h5>
       </div>
 
