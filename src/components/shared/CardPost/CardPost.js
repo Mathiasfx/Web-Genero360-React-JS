@@ -1,6 +1,7 @@
 import React from "react";
 import "./CardPost.css";
-import { Link as RouterLink, useLocation } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import moment from "moment";
 
 const CardPost = (props) => {
   const { id, titulo, descripcionCorta, imagenPrincipal, fecha } = props;
@@ -20,7 +21,7 @@ const CardPost = (props) => {
 
       <p>{descripcionCorta}....</p>
       <p>
-        <small>{fecha}</small>
+        <small>{moment(fecha).format("L")}</small>
       </p>
       <RouterLink to={`/novedades/${id}`}>
         <button className="btn  btn-360">Ver más</button>
