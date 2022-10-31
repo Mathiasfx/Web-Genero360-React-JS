@@ -5,7 +5,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   useParams,

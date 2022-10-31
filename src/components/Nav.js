@@ -26,7 +26,7 @@ const Nav = () => {
   }, [url]);
 
   const compararURL = (url) => {
-    if (url !== "/consurso" && url !== "/novedades") {
+    if (url !== "/concurso360" && url !== "/novedades") {
       return (
         <Fragment>
           <li>
