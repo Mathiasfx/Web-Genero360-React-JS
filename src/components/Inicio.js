@@ -16,7 +16,7 @@ const Inicio = () => {
   return (
     <Fragment>
       <div className="containter">
-        <PopupComp />
+        {/* <PopupComp /> */}
         <IntroGenero />
         <NuestroProposito />
         <NuestroObjetivo />

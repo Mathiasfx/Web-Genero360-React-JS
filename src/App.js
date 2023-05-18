@@ -22,7 +22,7 @@ function App() {
         <Nav />
         <Routes>
           <Route exact path="/" element={<Inicio />} />
-          <Route path="/concurso360" element={<Concurso />} />
+          {/* <Route path="/concurso360" element={<Concurso />} /> */}
           <Route path="/novedades" element={<Novedades />} />
           <Route path="/novedades/:id" element={<Novedades />} />
           <Route path="*" element={<Error404 />} />

@@ -55,9 +55,9 @@ const Nav = () => {
               Programa
             </Link>
           </li>
-          <li className="link60">
+          {/* <li className="link60">
             <RouterLink to="/concurso360">Concurso</RouterLink>
-          </li>
+          </li> */}
           <li>
             <Link onClick={this} to="contacto" spy={true} smooth={true}>
               Contacto
@@ -88,9 +88,9 @@ const Nav = () => {
             <RouterLink to="/"> Programa</RouterLink>
           </li>
 
-          <li className="link60">
+          {/* <li className="link60">
             <RouterLink to="/concurso360">Concurso</RouterLink>
-          </li>
+          </li> */}
           <li className="link60">
             <RouterLink to="/">Contacto</RouterLink>
           </li>

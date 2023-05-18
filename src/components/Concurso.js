@@ -7,22 +7,7 @@ import permisos from "../assets/Autorizacion_genero 360.doc";
 const Concurso = () => {
   return (
     <SectionConcurso>
-      <div className="containter">
-        <img
-          src={flyer}
-          alt="Imagen Concurso"
-          className="imgConcurso img-fluid"
-        />
-        <div className="contenedorBotonera">
-          <p>*Descarga las bases y condiciones del concurso </p>
-          <a href={bases}>
-            <button className="btn btn-primary">Bases y Condiciones</button>
-          </a>
-          <a href={permisos}>
-            <button className="btn  btn-primary ml-3">Permisos</button>
-          </a>
-        </div>
-      </div>
+      <div className="containter"></div>
     </SectionConcurso>
   );
 };
